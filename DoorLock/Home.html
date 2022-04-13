@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+  <link rel="stylesheet" href="styles.css"> 
+ <title>Smart Door Lock</title>
+</head>
+<body>
+
+  
+  <span style="margin-left: 400px; font-size: 18pt; "><a href="Home.html" style="padding: 15px;">Home</a> 
+    <a href="Data.html" style="padding: 15px; ">Data</a>               <!-- to go to data page -->
+    <a href="Configuration.html" style="padding: 15px; ">Setting</a>   <!-- to go to config page page -->
+</span>
+
+  <table class="table">
+   <caption> <h3> Today's Usage </h3> </caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Time</th>
+        <th>Method</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Asim</td>
+        <td>2:00</td>
+        <td>RFID card</td>
+        <td>true</td>
+      </tr>
+      <tr class="row">
+        <td>Waleed</td>
+        <td>3:00</td>
+        <td>Blutooth Detection</td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>Ahmed</td>
+        <td>4:00</td>
+        <td>Passcode</td>
+        <td>true</td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+  <div class="t2">      
+ <span style="margin-left: 25px;">Create a temporary passcode</span> 
+<br> <br>
+<b> user's name :</b> <input class="t_in1" type="text" placeholder="enter the user's name here">
+ <br><br> 
+<span>for how long do you want the temporary passcode to valid?</span>
+<br><br>  <!-- n_in mean number input -->
+<b> Hours: <input class="n_in" type="number" step="1" value="1"> Min </b> <input class="n_in" type="number" step="1" value="1" >
+         <!-- in1 mean input1 -->
+    <input class="in1" type="button"  value="Generate temporary passcode">
+    <br><br>   <!-- in2 mean input2 -->
+    <input class="in2" type="button"  value="Remote Unlock">
+  
+</div>
+
+
+</body>
+
+</html>

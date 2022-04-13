@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart Door Lock</title>
+</head>
+<body>
+  
+    <span style="margin-left: 400px; font-size: 18pt; "><a href="Home.html" style="padding: 15px;">Home</a> 
+        <a href="Data.html" style="padding: 15px; ">Data</a>
+        <a href="Configuration.html" style="padding: 15px; ">Setting</a>
+    </span>
+
+    <section>
+        <nav>             
+          <ul>
+                <h4> Unlock Method </h4>
+                <p class="p4"> Bluetooth Presence Detection <input type="radio"></p> 
+                <p class="p5"> RFID Tags <input type="radio"></p>
+                <p class="p6"> passcode <input type="radio"></p>
+                 
+          </ul> 
+          <br><br>
+         <h4>Extra Security</h4>
+         When the user use RFID tag or passcode 
+         he will be required to enter on OTP sent to him as an SMS 
+         <br><br>
+         2 Factor Authentication <input type="radio">
+          <input type="button" value="Save Setting" class="in_btn4">
+       
+        </nav>
+   
+
+    <div class="config_div">
+  
+        <p class="p1"><h4>Deactivate temporary passcode</h4> </p>
+        <br> <br>
+         User's name : <input class="t_in2" type="text" placeholder="Enter user name here"> 
+         <span class="C_in1"> <input type="button" value="Deactivate temporary passcode" class="in_btn2">  </span> <br><br>
+        
+         <p class="p2"><h4>Create User</h4> </p>
+        <br><br>
+         User's name : <input class="t_in3" type="text" placeholder="Enter user name here"> <br><br>
+         User's Email : <input class="t_in4" type="text" placeholder="Enter user Email here">
+
+         <span class="C_in2"> <input type="button" value="Create User" class="in_btn1">  </span>
+        <br><br> <br>
+        
+         <p class="p3"> <h4>Program User Credentials</h4> </p>
+         
+         User's name : <input class="t_in5" type="text" placeholder="Enter user name here"  style="margin-left: 25px;">
+         <span class="C_in3"> <input type="button" value="Select User" class="in_btn3">  </span>
+        <br> <br>
+         User's passcode : <input class="t_in6" type="text" placeholder="Enter user passcode here" >
+         <span class="C_in5"> <input type="button" value="Save passcode" class="in_btn5">  </span>
+         <br><br><br>
+         User's RFID tag <br>
+         place the RFID tag on the scanner and click on the Assign RFID tag
+         <span class="C_in6"> <input type="button" value="Assign RFID tag" class="in_btn6"  style="margin-left: 10px;">  </span>
+
+            
+
+         <table class="table2">
+            <caption> <h5> Near by bluetooth device </h5> </caption>
+             <thead>
+               <tr>
+                 <th>Device Name</th>
+                 <th>Mac Address</th>
+                 <th>Selected</th>
+            
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Ahmed's S8</td>
+                 <td>OO:11:22:FF</td>
+                 <td><input type="checkbox"></td>
+                 
+               </tr>
+               <tr class="row">
+                 <td>Asim's Iphon 13</td>
+                 <td>15:AC:11:FF</td>
+                 <td><input type="checkbox">
+               </tr>
+               <tr>
+                 <td>Waleed's Iphon</td>
+                 <td>10:17:F1:DE</td>
+                 <td><input type="checkbox"></td>
+                 
+               </tr>
+              
+             </tbody>
+           </table>
+    
+    
+
+        </div>
+
+   
+       
+     
+    
+
+
+
+
+
+</body>
+</html>
