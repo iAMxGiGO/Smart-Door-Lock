@@ -12,8 +12,8 @@ import mysql.connector
 
 keypad = Tk()
 keypad.title("keypad")
-account_sid = 'ACe6efcb98178d7fdc4a02ed513a1844f7'
-auth_token = 'a6df87db787bde3c842b3dbcf631a255'
+account_sid = 'SECRET'
+auth_token = 'SECRET'
 client = Client(account_sid, auth_token)
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
@@ -36,9 +36,9 @@ def click(num):
         message = "Thank You, Please Enter The OTP"
         labelText.set(message)
         otp = client.messages.create(
-                              from_='whatsapp:+14155238886',
+                              from_='whatsapp:+141SECRET',
                               body='Your SDL OTP is: '+randomOTP(),
-                              to='whatsapp:+966539322030'
+                              to='whatsapp:+966SECRET'
                           )
         print(otp.sid)
         print(currentOTP)
